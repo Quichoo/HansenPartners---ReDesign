@@ -1,5 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './App.css';
+import Asset1 from '../src/assets/Asset1.png';
+import Asset2 from '../src/assets/Asset2.png';
+import Logo1 from '../src/assets/logo1.png';
+import Logo2 from '../src/assets/logo2.png';
+import Logo3 from '../src/assets/logo3.png';
 
 function App() {
   const [isSideNavOpen, setIsSideNavOpen] = useState(false);
@@ -239,32 +244,32 @@ function App() {
           </div>
         </div>
       </section>
-      <section className="global-partners">
-        <div className="partners-images">
-          <div className="partners-image">
-            <img className="small-image" src="../src/assets/Asset1.png" alt="Description of Image 1" />
+        <section className="global-partners">
+          <div className="partners-images">
+            <div className="partners-image">
+              <img className="small-image" src={Asset1} alt="Description of Image 1" />
+            </div>
+            <div className="partners-image">
+              <img className="small-image" src={Asset2} alt="Description of Image 2" />
+            </div>
           </div>
-          <div className="partners-image">
-            <img className="small-image" src="../src/assets/Asset2.png" alt="Description of Image 2" />
+          <div className="partners-content">
+            <p>Leading Real Estate Companies of The World & Luxury Portfolio International</p>
+            <p>
+              JHRealty is a founding member of Luxury Portfolio International, the luxury division of Leading Real Estate Companies of the World®. With more than 500 member firms around the world, our luxury listings are exposed to a vast global audience and local real estate buyers and investors in over 70 countries.
+            </p>
+            <p>Who is Luxury Real Estate?</p>
+            <p>Who’s Who in Luxury Real Estate is a global collection of luxury real estate brokers.</p>
+            <p>
+              Through our international affiliations, we have a strong presence in over 70 countries. Our luxury listings are sent to prominent international real estate sites, reaching over 70 million potential buyers and investors worldwide through our relationships with:
+            </p>
+            <div className="partners-logos">
+              <img src={Logo1} alt="Leading Real Estate" />
+              <img src={Logo2} alt="Luxury Portfolio" />
+              <img src={Logo3} alt="Luxury Real Estate" />
+            </div>
           </div>
-        </div>
-        <div className="partners-content">
-          <p>Leading Real Estate Companies of The World & Luxury Portfolio International</p>
-          <p>
-            JHRealty is a founding member of Luxury Portfolio International, the luxury division of Leading Real Estate Companies of the World®. With more than 500 member firms around the world, our luxury listings are exposed to a vast global audience and local real estate buyers and investors in over 70 countries.
-          </p>
-          <p>Who is Luxury Real Estate?</p>
-          <p>Who’s Who in Luxury Real Estate is a global collection of luxury real estate brokers.</p>
-          <p>
-            Through our international affiliations, we have a strong presence in over 70 countries. Our luxury listings are sent to prominent international real estate sites, reaching over 70 million potential buyers and investors worldwide through our relationships with:
-          </p>
-          <div className="partners-logos">
-            <img src="../src/assets/logo1.png" alt="Leading Real Estate" />
-            <img src="../src/assets/logo2.png" alt="Luxury Portfolio" />
-            <img src="../src/assets/logo3.png" alt="Luxury Real Estate" />
-          </div>
-        </div>
-      </section>
+        </section>
         <section className="work-with-us">
         <div className="work-with-us-container">
           <div className="work-content">
